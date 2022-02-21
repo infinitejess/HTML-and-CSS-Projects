@@ -1,0 +1,11 @@
+table {
+	background-color: green;
+	border: 10px solid red;
+}
+font {
+	color: black;
+}
+td:hover {
+	background-color: aqua;
+	color: purple;
+}
