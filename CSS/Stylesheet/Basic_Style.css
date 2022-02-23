@@ -37,8 +37,8 @@ SELECT ALL SQUARES IN THE ARRAY
 SELECT ALL SQUARES IN PARAGRAPHS IN THE ARRAY
 ---------------------*/
 .squares:nth-child(-n+4) p{
-    font-family: "Helvetica";
-    font-size: 1.5cm;
+    font-family: "Helvetica Neue";
+    font-size: 1.5em;
     font-weight: 900;
     text-align: center;
     margin: 0;
