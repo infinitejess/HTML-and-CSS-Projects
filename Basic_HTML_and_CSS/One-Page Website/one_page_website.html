@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href=./CSS/one_page_website.css>
+		<script src="JS/one_page_website.js" defer></script>
 		<title>Jess's Dog Training</title>
 	</head>
 	<body>
@@ -11,7 +12,7 @@
 			<div>
 				<ul>
 					<a href="#home" id="link"><li>Home</li></a>
-					<a href="#pictures"><li>Pictures</li></a>
+					<a href="#row"><li>Pictures</li></a>
 					<a href="#video"><li>101 Video</li></a>
 					<a href="#requests"><li>Training Requests</li></a>
 				</ul>
@@ -29,39 +30,38 @@
 	
 		<!-- Pictures -->
 			<section>
-				<div id="pictures">
+				<div id="row">
 					<h1>Pictures</h1>
 					<div>
 				
 					<!-- PHOTO-CONTAINER 1-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/2dogs.png" alt="two dogs">
+					<div class="column">
+							<img src="./images/2dogs.png" alt="two dogs" onclick="openModal();currentSlide(1)" class="hover-shadow">
 						</div>
-					</div>
+					
 					<!-- END OF PHOTO-CONTAINER 1 -->
 				
 				<!-- PHOTO-CONTAINER 2-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/Lab.png" alt="Lab">
-						</div>
+					<div class="column">
+						
+							<img src="./images/Lab.png" alt="Lab" onclick="openModal();currentSlide(2)" class="hover-shadow">
+						
 					</div>
 					<!-- END OF PHOTO-CONTAINER 2 -->
 					
 				<!-- PHOTO-CONTAINER 3-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/grad.png" alt="dog in grad hat">
-						</div>
+					<div class="column">
+						
+							<img src="./images/grad.png" alt="dog in grad hat" onclick="openModal();currentSlide(3)" class="hover-shadow">
+						
 					</div>
 					<!-- END OF PHOTO-CONTAINER 3 -->
 				
 				<!-- PHOTO-CONTAINER 4-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/German.png" alt="German shepherd">
-						</div>
+					<div class="column">
+						
+							<img src="./images/German.png" alt="German shepherd" onclick="openModal();currentSlide(4)" class="hover-shadow">
+						
 					</div>
 					<!-- END OF PHOTO-CONTAINER 4 -->
 				
@@ -70,6 +70,55 @@
 		</section>
 		<!-- End Pictures -->
 	
+		<!-- Modal -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1/4</div>
+					<img src="./Images/2dogs.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2/4</div>
+					<img src="./Images/Lab.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3/4</div>
+					<img src="./Images/Grad.png" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4/4</div>
+					<img src="./Images/German.png" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/2dogs.png" onclick="currentSlide(1)" alt="Train 2 dogs!">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/Lab.png" onclick="currentSlide(2)" alt="Treat focused!">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/Grad.png" onclick="currentSlide(3)" alt="Have the most behaved dog!">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./Images/German.png" onclick="currentSlide(4)" alt="And build the best relationship with them.">
+				</div>
+
+			</div>
+		</div>
 	
 		<!-- Video -->
 		<div id="video">
@@ -101,6 +150,7 @@
 		jesstrainsyourdog.com &nbsp;***&nbsp; 619.555.5555 &nbsp;***&nbsp; AKC Certified Trainers
 		</footer>
 	<!-- End Footer-->
+	
 	</body>
 </html>
 	
