@@ -1,2 +1,2 @@
 # HTML-and-CSS-Projects
-This will house the HTML and CSS projects that I do for my Tech Academy courses. 
+These are my HTML and CSS projects. There are a myriad of foundational exercises as well as a few websites. One of the larger projects is a website built out for a cinema that includes images, tables, date and times, etc. The second larger project was a space station website that is set up for booking travel to different planets. The space station site includes tons of images, buttons, forms and animations.
